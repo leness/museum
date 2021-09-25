@@ -1,0 +1,13 @@
+/* font-family: 'Forum', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Forum", cursive;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
