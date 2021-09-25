@@ -8,13 +8,25 @@
       rel="icon"
       href="./assets/ico/art_building_france_landmark_louvre_museum_paris_icon.ico"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
     <title>museum</title>
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
-        <a href="#">logo</a>
+        <a href="#" class="logo">logo</a>
         <nav class="header__navigation">
           <ul class="navigation">
             <li>
@@ -51,21 +63,122 @@
         </div>
       </section>
       <section class="visiting">
-        <h2 class="section__title">Virtual tour</h2>
-        <div class="container">
-          <a href="">
-            <img src="./assets/img/royal_palace.jpg" alt="image Royal Palace" />
-            <h3>Royal Palace</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </a>
+        <div class="wrapper">
+          <h2 class="section__title">Virtual tour</h2>
+          <div class="container">
+            <a href="">
+              <img
+                src="./assets/img/visiting/royal_palace.jpg"
+                alt="image Royal Palace"
+              />
+              <h3>Royal Palace</h3>
+              <p class="visiting__title">360° Virtual Tour</p>
+              <p class="visiting__description">Google Street Panorama View</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="explore">
+        <div class="wrapper">
+          <div class="layout-2-column">
+            <div class="explore__content">
+              <h2>Picture explore</h2>
+              <p>
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading
+                artist of the Spanish Golden Age.
+              </p>
+              <p>
+                It was cleaned in 1984 to remove a "yellow veil" of dust that
+                had gathered since the previous restoration in the 19th century.
+              </p>
+              <p>
+                The cleaning provoked furious protests, not because the picture
+                had been damaged in any way, but because it looked different.
+              </p>
+            </div>
+            <div class="explore__image">
+              <img src="./assets/img/explore/Rectangle (1).jpg" alt="" />
+              <img src="./assets/img/explore/Rectangle.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="wrapper">
+          <h2>Video journey</h2>
+          <p>
+            Enter and visit one of the most famous museums in the world and
+            enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+          </p>
+          <img src="./assets/img/video/poster.jpg" alt="" />
+          <video
+            src="assets/video/video.mp4"
+            poster="assets/video/poster.jpg"
+            controls
+          ></video>
+        </div>
+        <div>
+          <img src="./assets/img/video/poster1.jpg" alt="" />
         </div>
       </section>
       <section></section>
       <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="tickets">
+        <div class="wrapper">
+          <h2>BUY TICKETS</h2>
+          <div>
+            <img src="./assets/img/tickets/tickets_image.jpg" alt="" />
+          </div>
+          <img src="./assets/img/tickets/panorama.jpg" alt="" />
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper">
+          <h2>Contacts</h2>
+          <h3>Palais Royal Musee du Louvre</h3>
+          <ul>
+            <li>k</li>
+            <li>k</li>
+            <li>k</li>
+          </ul>
+          <img src="./assets/img/contacts/map.jpg" alt="" />
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <a href="#" class="logo">logo</a>
+        <div class="footer__navigation">
+          <div class="footer__navigation_column">
+            <ul class="footer-navigation__links">
+              <li><a href="#">Visiting</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Video</a></li>
+            </ul>
+          </div>
+          <div class="footer__navigation_column">
+            <ul class="footer-navigation__links">
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">ss</a></li>
+            <li><a href="#">ss</a></li>
+            <li><a href="#">ss</a></li>
+            <li><a href="#">ss</a></li>
+            <li><a href="#">ss</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>2021</p>
+          <p>The Rolling Scopes School</p>
+          <p>Username</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
