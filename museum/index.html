@@ -25,26 +25,38 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper">
-        <a href="#" class="logo">logo</a>
+      <div class="wrapper header__wrapper">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              class="logo__image"
+              src="./assets/svg/logo.svg"
+              alt="logo"
+              aria-label="Link to home page"
+            />
+          </a>
+          <h1 class="logo__title">
+            <a href="./index.html">louvre</a>
+          </h1>
+        </div>
         <nav class="header__navigation">
           <ul class="navigation">
-            <li>
+            <li class="navigation__link">
               <a href="#">Visiting</a>
             </li>
-            <li>
+            <li class="navigation__link">
               <a href="#">Explore</a>
             </li>
-            <li>
+            <li class="navigation__link">
               <a href="#">Video</a>
             </li>
-            <li>
+            <l class="navigation__link" i class="navigation__link">
               <a href="#">Gallery</a>
-            </li>
-            <li>
+            </l>
+            <li class="navigation__link">
               <a href="#">Tickets</a>
             </li>
-            <li>
+            <li class="navigation__link">
               <a href="#">Contacts</a>
             </li>
           </ul>
@@ -55,14 +67,14 @@
       <section class="welcome">
         <div class="wrapper">
           <div class="welcome__content">
-            <h2 class="section__title">Welcome to the Louvre</h2>
+            <h1 class="section__title">Welcome to the Louvre</h1>
             <p>From the castle to the museum</p>
             <!-- <button class="welcome__button">Discover the Louvre</button> -->
             <a class="welcome__button" href="#">Discover the Louvre</a>
           </div>
         </div>
       </section>
-      <section class="visiting">
+      <section class="virtual__tour">
         <div class="wrapper">
           <h2 class="section__title">Virtual tour</h2>
           <div class="container">
@@ -116,21 +128,25 @@
             poster="assets/video/poster.jpg"
             controls
           ></video>
-        </div>
-        <div>
-          <img src="./assets/img/video/poster1.jpg" alt="" />
+          <div>
+            <img src="./assets/img/video/poster1.jpg" alt="" />
+          </div>
         </div>
       </section>
-      <section></section>
+      <section class="art__gallery"></section>
       <section></section>
       <section class="tickets">
         <div class="wrapper">
           <h2>BUY TICKETS</h2>
           <div>
-            <img src="./assets/img/tickets/tickets_image.jpg" alt="" />
+            <img src="./assets/img/tickets/tickets_image.jpg" alt="picture" />
           </div>
-          <img src="./assets/img/tickets/panorama.jpg" alt="" />
         </div>
+        <img
+          class="panorama"
+          src="./assets/img/tickets/panorama.jpg"
+          alt="panorama"
+        />
       </section>
       <section class="contacts">
         <div class="wrapper">
