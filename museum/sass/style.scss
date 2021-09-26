@@ -1,13 +1,16 @@
-/* font-family: 'Forum', cursive; */
-/* font-family: 'Roboto', sans-serif; */
+@import "base/base";
+@import "abstract/constants";
+@import "layouts/wrapper";
 
-html {
-font-size: 10px;
-}
+@import "layouts/header";
 
-body {
-font-size: 1.6rem;
-font-family: 'Forum', cursive;
-text-transform: uppercase;
-}
+// components
+@import "components/welcome";
+@import "components/visiting";
+@import "components/explore";
+@import "components/video";
+@import "components/art_gallery";
+@import "components/tickets";
+@import "components/contacts";
 
+@import "layouts/footer";
