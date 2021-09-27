@@ -4,11 +4,13 @@
 
 h1{
     
-    font-family: 'Forum', cursive;
+    @extend %font-add;
     font-style: normal;
     font-weight: normal;
     font-size: 80px;
     line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -17,6 +19,8 @@ h2 {
     font-weight: normal;
     font-size: 80px;
     line-height: 95px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 h3 {

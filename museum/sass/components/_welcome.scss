@@ -1,3 +1,116 @@
-// .welcome {
-//     background: $color-bg-dark;
-// }
+.welcome {
+    background: $color-bg-dark;
+    height: 810px;
+}
+
+.welcome__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome__content {
+    width: 593px;
+    margin-top: 180px;
+    left: 0;
+}
+
+.welcome__title {
+    margin: 0;
+    color: $color-white;
+    position: absolute;
+}
+
+.welcome__text {
+    color: $color-white;
+    position: absolute;
+    margin-top: 200px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+}
+
+.welcome__image {
+    right: 240px;
+    padding-bottom: 60px;
+    align-items: baseline;
+}
+
+.welcome__button {
+    position: absolute;
+    background-color: $color-dark-red;
+    margin-top: 290px;
+    padding: 26px 64px;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.pagination {
+    display: flex;
+    background: $color-bg-dark;
+    width: 600px;
+    height: 120px;
+    // outline: 2px solid red;
+    position: absolute;
+    bottom: 3px;
+    align-items: center;
+    // justify-content: space-around;
+}
+
+.pagination__numbers {
+    display: flex;
+    color: $color-white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+margin-left: 74px;
+margin-right: 55px;
+}
+
+.pagination__numbers > div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.paginate {
+    background: $color-bg-dark;
+    border: none;
+    cursor: pointer;
+}
+
+.squares {
+    display: flex;
+    margin-right: 60px;
+}
+
+.squares > li {
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+    background: $color-white;
+    cursor: pointer;
+}
+
+.squares > li:hover {
+    background: $color-font-primary;
+}
+
+.squares > li:first-child {
+    background: $color-font-primary;
+}
+

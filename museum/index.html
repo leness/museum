@@ -35,9 +35,9 @@
               aria-label="Link to home page"
             />
           </a>
-          <h1 class="logo__title">
+          <p class="logo__title">
             <a href="./index.html">louvre</a>
-          </h1>
+          </p>
         </div>
         <nav class="header__navigation">
           <ul class="navigation">
@@ -50,9 +50,9 @@
             <li class="navigation__link">
               <a href="#">Video</a>
             </li>
-            <l class="navigation__link" i class="navigation__link">
+            <li class="navigation__link" i class="navigation__link">
               <a href="#">Gallery</a>
-            </l>
+            </li>
             <li class="navigation__link">
               <a href="#">Tickets</a>
             </li>
@@ -65,12 +65,52 @@
     </header>
     <main>
       <section class="welcome">
-        <div class="wrapper">
+        <div class="wrapper welcome__wrapper">
           <div class="welcome__content">
-            <h1 class="section__title">Welcome to the Louvre</h1>
-            <p>From the castle to the museum</p>
+            <h2 class="welcome__title">
+              Welcome <br />
+              to the Louvre
+            </h2>
+            <p class="welcome__text">From the castle to the museum</p>
             <!-- <button class="welcome__button">Discover the Louvre</button> -->
-            <a class="welcome__button" href="#">Discover the Louvre</a>
+            <a
+              class="welcome__button"
+              target="_blank"
+              href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+              >Discover the Louvre</a
+            >
+          </div>
+          <div>
+            <img
+              class="welcome__image"
+              src="./assets/img/welcome/welcome.jpg"
+              alt="picture-Louvre"
+            />
+          </div>
+
+          <div class="pagination">
+            <div class="pagination__numbers">
+              <div>01</div>
+              <div>|</div>
+              <div>05</div>
+            </div>
+            <div>
+              <ul class="squares">
+                <li class="squares__color"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div>
+              <button class="paginate left">
+                <img src="./assets/svg/←.svg" alt="" />
+              </button>
+              <button class="paginate right">
+                <img src="./assets/svg/← (1).svg" alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </section>

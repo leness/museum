@@ -1,9 +1,14 @@
 h1 {
   font-family: "Forum", cursive;
+}
+
+h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
   line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -12,6 +17,8 @@ h2 {
   font-weight: normal;
   font-size: 80px;
   line-height: 95px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -89,11 +96,122 @@ a {
   justify-content: center;
 }
 
-.explore {
+.footer {
   background: #030303;
 }
 
-.footer {
+.welcome {
+  background: #030303;
+  height: 810px;
+}
+
+.welcome__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.welcome__content {
+  width: 593px;
+  margin-top: 180px;
+  left: 0;
+}
+
+.welcome__title {
+  margin: 0;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.welcome__text {
+  color: #FFFFFF;
+  position: absolute;
+  margin-top: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+.welcome__image {
+  right: 240px;
+  padding-bottom: 60px;
+  align-items: baseline;
+}
+
+.welcome__button {
+  position: absolute;
+  background-color: #710707;
+  margin-top: 290px;
+  padding: 26px 64px;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.pagination {
+  display: flex;
+  background: #030303;
+  width: 600px;
+  height: 120px;
+  position: absolute;
+  bottom: 3px;
+  align-items: center;
+}
+
+.pagination__numbers {
+  display: flex;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-left: 74px;
+  margin-right: 55px;
+}
+
+.pagination__numbers > div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.paginate {
+  background: #030303;
+  border: none;
+  cursor: pointer;
+}
+
+.squares {
+  display: flex;
+  margin-right: 60px;
+}
+
+.squares > li {
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.squares > li:hover {
+  background: #9D8665;
+}
+
+.squares > li:first-child {
+  background: #9D8665;
+}
+
+.explore {
   background: #030303;
 }
 
