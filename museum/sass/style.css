@@ -157,6 +157,10 @@ a {
   letter-spacing: 2px;
 }
 
+.welcome__button:hover {
+  background-color: #9D8665;
+}
+
 .pagination {
   display: flex;
   background: #030303;
@@ -210,6 +214,10 @@ a {
 
 .squares > li:first-child {
   background: #9D8665;
+}
+
+.section__title {
+  color: #9D8665;
 }
 
 .explore {

@@ -58,6 +58,10 @@
     letter-spacing: 2px;
 }
 
+.welcome__button:hover {
+    background-color: $color-font-primary;
+}
+
 .pagination {
     display: flex;
     background: $color-bg-dark;
