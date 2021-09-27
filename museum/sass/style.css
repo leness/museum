@@ -159,7 +159,7 @@ a {
 
 .footer__social {
   margin-top: 162px;
-  margin-left: 397px;
+  margin-left: 325px;
   margin-bottom: 55px;
 }
 
@@ -540,6 +540,14 @@ a {
   padding-bottom: 25px;
   border-bottom: 3px solid #710707;
   margin-bottom: 75px;
+}
+
+.contacts__title {
+  margin-top: 75px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #710707;
+  margin-bottom: 75px;
+  margin-right: 198px;
 }
 
 .parallax {
