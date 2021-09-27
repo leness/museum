@@ -227,6 +227,7 @@ a {
 
 .virtual__card {
   width: 440px;
+  list-style: none;
 }
 
 .visiting__title {
@@ -320,6 +321,121 @@ a {
 .explore__slider {
   position: absolute;
   left: 421px;
+}
+
+.video__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #9D8665;
+}
+
+.video__text {
+  width: 720px;
+  margin-left: 115px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  align-items: center;
+  color: #000000;
+}
+
+.video__box {
+  display: flex;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  align-items: center;
+}
+
+.video__poster {
+  position: relative;
+}
+
+.video__icon_play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video__progress {
+  width: 1440px;
+  height: 85px;
+  padding-top: 39px;
+  background: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+  border: solid 2px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 400px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #434343;
+}
+
+.video__videos {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  padding-left: 0;
+}
+
+.video__link {
+  list-style: none;
+  width: 452px;
+  height: 254px;
+  margin-right: 42px;
+}
+
+.video__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.elipse {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.elipse > li {
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #999999;
+  list-style: none;
+}
+
+.elipse > li:hover {
+  background-color: #333333;
+}
+
+.elipse > li:first-child {
+  background-color: #333333;
+}
+
+.video__pagination > img {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

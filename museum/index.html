@@ -240,23 +240,65 @@
       </section>
       <section class="video">
         <div class="wrapper">
-          <h2>Video journey</h2>
-          <p>
-            Enter and visit one of the most famous museums in the world and
-            enjoy masterpieces such as Mona Lisa or Hammurabi's Code
-          </p>
-          <img src="./assets/img/video/poster.jpg" alt="" />
-          <video
+          <div class="video__box">
+            <h2 class="video__title">Video journey</h2>
+            <p class="video__text">
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+          <div class="video__poster">
+            <img src="./assets/img/video/poster.jpg" alt="louvre" />
+            <img
+              class="video__icon_play"
+              src="./assets/svg/video/Group.svg"
+              alt=""
+            />
+          </div>
+          <div class="video__progress">
+            <input
+              type="range"
+              value="40"
+              min="0"
+              max="100"
+              step="1"
+              class="progress"
+            />
+          </div>
+          <!-- <video
             src="assets/video/video.mp4"
             poster="assets/video/poster.jpg"
             controls
-          ></video>
+          ></video> -->
           <div>
-            <img src="./assets/img/video/poster1.jpg" alt="" />
+            <ul class="video__videos">
+              <li class="video__link">
+                <img src="./assets/img/video/poster1.jpg" alt="" />
+              </li>
+              <li class="video__link">
+                <img src="./assets/img/video/poster2.jpg" alt="" />
+              </li>
+              <li class="video__link">
+                <img src="./assets/img/video/poster3.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="video__pagination">
+            <img src="./assets/svg/video/pagination_left.svg" alt="" />
+            <ul class="elipse">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="./assets/svg/video/pagination_right.svg" alt="" />
           </div>
         </div>
       </section>
-      <section class="art__gallery"></section>
+      <section class="art__gallery">
+        <h2 class="art__gallery_title">Art Gallery</h2>
+      </section>
       <section></section>
       <section class="tickets">
         <div class="wrapper">
