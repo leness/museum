@@ -297,22 +297,26 @@
         </div>
       </section>
       <section class="art__gallery">
-        <h2 class="art__gallery_title">Art Gallery</h2>
+        <div class="wrapper">
+          <h2 class="art__gallery_title">Art Gallery</h2>
+        </div>
       </section>
       <section></section>
       <section class="tickets">
         <div class="wrapper">
-          <h2>BUY TICKETS</h2>
+          <h2 class="tickets__title">BUY TICKETS</h2>
           <div>
             <img src="./assets/img/tickets/tickets_image.jpg" alt="picture" />
           </div>
         </div>
+      </section>
+      <div class="parallax">
         <img
           class="panorama"
           src="./assets/img/tickets/panorama.jpg"
           alt="panorama"
         />
-      </section>
+      </div>
       <section class="contacts">
         <div class="wrapper">
           <h2>Contacts</h2>
@@ -328,36 +332,103 @@
     </main>
     <footer class="footer">
       <div class="wrapper">
-        <a href="#" class="logo">logo</a>
-        <div class="footer__navigation">
-          <div class="footer__navigation_column">
-            <ul class="footer-navigation__links">
-              <li><a href="#">Visiting</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Video</a></li>
-            </ul>
+        <div class="footer__flex">
+          <div class="footer__navigation">
+            <div class="logo footer__logo">
+              <a href="./index.html">
+                <img
+                  class="logo__image"
+                  src="./assets/svg/logo.svg"
+                  alt="logo"
+                  aria-label="Link to home page"
+                />
+              </a>
+              <p class="logo__title">
+                <a href="./index.html">louvre</a>
+              </p>
+            </div>
+            <div class="footer__navigation_column">
+              <ul class="footer__navigation_links">
+                <li><a href="#">Visiting</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Video</a></li>
+              </ul>
+            </div>
+            <div class="footer__navigation_column">
+              <ul class="footer__navigation_links">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__navigation_column">
-            <ul class="footer-navigation__links">
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Tickets</a></li>
-              <li><a href="#">Contacts</a></li>
+          <div class="footer__social">
+            <ul class="footer__list">
+              <li class="footer__social_list">
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на YouTube"
+                  href="https://www.youtube.com/"
+                  ><img
+                    src="./assets/svg/footer/Frame (1).svg"
+                    alt="ссылка на YouTube"
+                /></a>
+              </li>
+              <li class="footer__social_list">
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на Instagram"
+                  href="https://www.instagram.com/"
+                  ><img
+                    src="./assets/svg/footer/Frame.svg"
+                    alt="ссылка на Instagram"
+                /></a>
+              </li>
+              <li class="footer__social_list">
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на Facebook"
+                  href="https://facebook.com/"
+                  ><img
+                    src="./assets/svg/footer/Frame (2).svg"
+                    alt="ссылка на Facebook"
+                /></a>
+              </li>
+              <li class="footer__social_list">
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на Twitter"
+                  href="https://twitter.com/"
+                  ><img
+                    src="./assets/svg/footer/Frame (3).svg"
+                    alt="ссылка на Twitter"
+                /></a>
+              </li>
+              <li class="footer__social_list">
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на Pinterest"
+                  href="https://www.pinterest.ru/"
+                  ><img
+                    src="./assets/svg/footer/Frame (4).svg"
+                    alt="ссылка на Pinterest"
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
-        <div>
-          <ul>
-            <li><a href="#">ss</a></li>
-            <li><a href="#">ss</a></li>
-            <li><a href="#">ss</a></li>
-            <li><a href="#">ss</a></li>
-            <li><a href="#">ss</a></li>
-          </ul>
-        </div>
-        <div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="wrapper">
+        <div class="footer__down">
           <p>2021</p>
           <p>The Rolling Scopes School</p>
-          <p>Username</p>
+          <p>Olena Stadnyk</p>
         </div>
       </div>
     </footer>
