@@ -68,7 +68,7 @@
     width: 600px;
     height: 120px;
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     align-items: center;
 }
 
@@ -81,8 +81,8 @@
     font-size: 22px;
     line-height: 40px;
     text-transform: uppercase;
-margin-left: 74px;
-margin-right: 55px;
+    margin-left: 74px;
+    margin-right: 55px;
 }
 
 .pagination__numbers > div:not(:last-child) {
@@ -106,6 +106,7 @@ margin-right: 55px;
     height: 16px;
     margin: 10px;
     background: $color-white;
+    list-style: none;
     cursor: pointer;
 }
 
