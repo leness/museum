@@ -1,6 +1,5 @@
 .header {
     background: $color-bg-dark;
-    // padding: 59px 0 58px 0;
 }
 
 .header__wrapper {
@@ -14,20 +13,11 @@
 }
 
 .header__navigation {
-    padding: 62px 0 62px 0;
+    padding: 23px 0 42px 0;
 }
 
-.navigation__link > a {
-    list-style: none;
-    color: $color-white;
-    text-decoration: none;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 2px;
+.navigation__link > a:hover {
+    color: $color-font-primary;
 }
 
 .navigation__link:not(:last-child) {
@@ -58,6 +48,36 @@ a {
 
 .logo {
     display: flex;
+    margin-top: -16px;
     align-items: center;
     justify-content: center;
+}
+
+.header__link {
+    position: relative;
+    list-style: none;
+    color: $color-white;
+    text-decoration: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.header__link::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: $color-font-primary;
+    transition: width 0.3s ease-in-out;
+    bottom: -15px;
+}
+
+.header__link:hover:after {
+    width: 100%;
 }
