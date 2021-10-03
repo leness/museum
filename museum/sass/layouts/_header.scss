@@ -67,17 +67,17 @@ a {
     letter-spacing: 2px;
 }
 
-.header__link::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 0;
-    background-color: $color-font-primary;
-    transition: width 0.3s ease-in-out;
-    bottom: -15px;
-}
+// .header__link::after {
+//     display: block;
+//     position: absolute;
+//     content: "";
+//     height: 1px;
+//     width: 0;
+//     background-color: $color-font-primary;
+//     transition: width 0.3s ease-in-out;
+//     bottom: -15px;
+// }
 
-.header__link:hover:after {
-    width: 100%;
-}
+// .header__link:hover:after {
+//     width: 100%;
+// }
