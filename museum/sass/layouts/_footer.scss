@@ -55,6 +55,10 @@
     border-radius: 50px;
 }
 
+.footer__social_list:hover {
+    border: 1px solid $color-font-primary;
+}
+
 .footer__list {
     padding-left: 0;
     margin: 0;      

@@ -2,6 +2,11 @@ h1 {
   font-family: "Forum", cursive;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-style: normal;
   font-weight: normal;
@@ -22,11 +27,21 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: Forum;
   font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #000000;
+}
+
+.section__title_gold {
+  color: #9D8665;
+  margin: 0;
+  padding-top: 75px;
 }
 
 .wrapper {
@@ -49,19 +64,7 @@ h3 {
 }
 
 .header__navigation {
-  padding: 62px 0 62px 0;
-}
-
-.navigation__link > a {
-  list-style: none;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 2px;
+  padding: 42px 0 46px 0;
 }
 
 .navigation__link > a:hover {
@@ -96,8 +99,22 @@ a {
 
 .logo {
   display: flex;
+  margin-top: -10px;
   align-items: center;
   justify-content: center;
+}
+
+.header__link {
+  position: relative;
+  list-style: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
 }
 
 .footer {
@@ -212,7 +229,7 @@ a {
 }
 
 .welcome__title {
-  margin: 0;
+  margin-top: -30px;
   color: #FFFFFF;
   position: absolute;
 }
@@ -220,7 +237,7 @@ a {
 .welcome__text {
   color: #FFFFFF;
   position: absolute;
-  margin-top: 200px;
+  margin-top: 180px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -262,7 +279,7 @@ a {
   width: 600px;
   height: 120px;
   position: absolute;
-  bottom: 5px;
+  bottom: 6px;
   align-items: center;
 }
 
@@ -313,25 +330,49 @@ a {
   background: #9D8665;
 }
 
-.section__title {
-  color: #9D8665;
-  margin-top: 75px;
-  padding-bottom: 25px;
-  margin-bottom: 75px;
-  border-bottom: 3px solid #9D8665;
-}
-
-.virtual__card {
-  width: 440px;
-  list-style: none;
-}
-
 .visiting__title {
+  position: relative;
+  margin-bottom: 102px;
+}
+
+.visiting__title::after {
+  position: absolute;
+  content: "";
+  width: 1440px;
+  height: 3px;
+  background: #710707;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+}
+
+.visiting_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  column-gap: 60px;
+  row-gap: 75px;
+}
+
+.title__card {
+  position: relative;
   margin-top: 25px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #000000;
-  border-bottom: 2px solid #710707;
+  margin-bottom: 22px;
+}
+
+.title__card::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background: #710707;
+  left: 0;
+  bottom: -10px;
+  transition-duration: 1s;
+}
+
+.title__card:hover::after {
+  width: 440px;
 }
 
 .visiting__text {
@@ -341,6 +382,8 @@ a {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .visiting__description {
@@ -350,21 +393,11 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-}
-
-.virtual__section {
   margin: 0;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.virtual__card:not(:nth-child(3n)) {
-  margin-right: 60px;
-}
-
-.virtual__card:not(:nth-last-child(-n)) {
-  margin-bottom: 75px;
+.wrapper__visiting {
+  padding-bottom: 75px;
 }
 
 .explore {
@@ -373,16 +406,26 @@ a {
 
 .layout-2-column {
   display: flex;
-  padding: 85px 0;
+  padding: 75px 0;
 }
 
 .explore__title {
+  position: relative;
   margin-top: 0;
   padding-bottom: 25px;
   margin-bottom: 75px;
   line-height: 90px;
   color: #FFFFFF;
-  border-bottom: 3px solid #710707;
+}
+
+.explore__title::after {
+  position: absolute;
+  content: "";
+  width: 660px;
+  height: 3px;
+  background: #710707;
+  left: 0;
+  top: 115px;
 }
 
 .explore__text {
@@ -404,6 +447,7 @@ a {
   position: relative;
   width: 720px;
   height: 700px;
+  margin-top: 10px;
 }
 
 .explore__picture {
@@ -563,7 +607,7 @@ a {
 .parallax {
   width: 100%;
   height: 400px;
-  background-image: url("../assets/img/parallax.jpg");
+  background-image: url("../../assets/img/parallax.jpg");
   background-size: cover;
   background-attachment: fixed;
 }

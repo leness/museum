@@ -4,16 +4,26 @@
 
 .layout-2-column {
     display: flex;
-    padding: 85px 0;
+    padding: 75px 0;
 }
 
 .explore__title {
+    position: relative;
     margin-top: 0;
     padding-bottom: 25px;
     margin-bottom: 75px;
     line-height: 90px;
     color: $color-white;
-    border-bottom: 3px solid $color-dark-red;
+}
+
+.explore__title::after {
+    position: absolute;
+    content: '';
+    width: 660px;
+    height: 3px;
+    background: $color-dark-red;
+    left: 0;
+    top: 115px;
 }
 
 .explore__text {
@@ -35,6 +45,7 @@
     position: relative;
     width: 720px;
     height: 700px;
+    margin-top: 10px;
 }
 
 .explore__picture {
