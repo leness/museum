@@ -224,14 +224,19 @@
           </div>
         </div>
       </section>
+
       <section class="video">
         <div class="wrapper">
           <div class="video__box">
-            <h2 class="section__title_gold">Video journey</h2>
-            <p class="video__text">
-              Enter and visit one of the most famous museums in the world and
-              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
-            </p>
+            <div>
+              <h2 class="section__title_gold">Video journey</h2>
+            </div>
+            <div>
+              <p class="video__text">
+                Enter and visit one of the most famous museums in the world and
+                enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+              </p>
+            </div>
           </div>
           <div class="video__poster">
             <img src="./assets/img/video/poster.jpg" alt="louvre" />
@@ -241,7 +246,8 @@
               alt=""
             />
           </div>
-          <div class="video__progress">
+
+          <!-- <div class="video__progress">
             <input
               type="range"
               value="40"
@@ -250,12 +256,8 @@
               step="1"
               class="progress"
             />
-          </div>
-          <!-- <video
-            src="assets/video/video.mp4"
-            poster="assets/video/poster.jpg"
-            controls
-          ></video> -->
+          </div> -->
+
           <div>
             <ul class="video__videos">
               <li class="video__link">
@@ -282,11 +284,19 @@
           </div>
         </div>
       </section>
+
       <section class="art__gallery">
         <div class="wrapper">
           <h2 class="art__gallery_title">Art Gallery</h2>
+          <div class="picture__container">
+            <div class="picture__inner_container"></div>
+          </div>
+          <div class="blackout">
+            <img src="./assets/img/galery/blackout.png" alt="" />
+          </div>
         </div>
       </section>
+
       <section class="tickets">
         <div class="wrapper">
           <h2 class="section__title_gold">BUY TICKETS</h2>
@@ -428,5 +438,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="js/gallery.js"></script>
   </body>
 </html>
