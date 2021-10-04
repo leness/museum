@@ -1,9 +1,29 @@
 .art__gallery {
+    position: relative;
     background: $color-bg-dark;
-    margin-bottom: 75px;
 }
 
 .art__gallery_title {
+    padding-top: 75px;
+    padding-bottom: 75px;
     color: $color-white;
     margin: 0;
+}
+
+.picture__container {
+    width: 1440px;
+    height: 2664px;
+    columns: 3;
+    column-gap: 36px;
+    overflow-y: hidden;  
+}
+
+.picture__inner_container {
+    display: grid;
+}
+
+.blackout {
+    position: absolute;
+    content: '';
+    bottom: 0;
 }
